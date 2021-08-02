@@ -12,6 +12,13 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+
+# fix go version
+pushd feeds/packages/lang
+rm -fr golang
+svn co https://github.com/coolsnowwolf/packages/trunk/lang/golang
+popd
+# fix kcptun version
 pushd feeds/packages/net
 rm -fr kcptun
 svn co https://github.com/coolsnowwolf/packages/trunk/net/kcptun
