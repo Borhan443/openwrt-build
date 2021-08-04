@@ -23,3 +23,8 @@ pushd feeds/packages/net
 rm -fr kcptun
 svn co https://github.com/coolsnowwolf/packages/trunk/net/kcptun
 popd
+
+pushd feeds/packages/kernel/ksmbd
+rm -fr Makefile
+wget https://raw.githubusercontent.com/openwrt/packages/2543c33b0b05db79954124b469dedc8717d7c584/kernel/ksmbd/Makefile
+popd
