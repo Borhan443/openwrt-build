@@ -29,4 +29,6 @@ rm -fr Makefile
 wget https://raw.githubusercontent.com/openwrt/packages/2543c33b0b05db79954124b469dedc8717d7c584/kernel/ksmbd/Makefile
 popd
 
-svn list https://svn.unix-ag.uni-kl.de/vpnc/trunk --trust-server-cert
+svn list https://svn.unix-ag.uni-kl.de/vpnc/trunk << EOF
+p
+EOF
